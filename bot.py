@@ -2,8 +2,9 @@ import requests
 import re
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, ContextTypes, CallbackQueryHandler, MessageHandler, filters
+import os
 
-BOT_TOKEN = "8906698752:AAGTOoFa7YPH_H2pOwiQQp58034aIy_B9C8"
+BOT_TOKEN = os.getenv("8906698752:AAGTOoFa7YPH_H2pOwiQQp58034aIy_B9C8")
 
 COUNTRIES = {
     "MM": "Myanmar",
