@@ -81,8 +81,8 @@ async def auto_check(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = text.strip()
 
     patterns = [
-        r'(\d{9,10})\s*[\(\s]?(\d{4})[\)\s]?',
-        r'(\d{9,10})\s+(\d{4})',
+        r'(\d{9,10})\s*[\(\s]?(\d{4,5})[\)\s]?',
+        r'(\d{9,10})\s+(\d{4,5})',
     ]
 
     user_id = None
